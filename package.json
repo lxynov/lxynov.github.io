@@ -1,0 +1,34 @@
+{
+  "name": "lins-blog",
+  "version": "0.1.0",
+  "description": "A lightweight static site generator for blogging",
+  "main": "lib/index.js",
+  "bin": {
+    "lblog": "./bin/cli.js"
+  },
+  "scripts": {
+    "build": "node ./bin/cli.js build",
+    "new": "node ./bin/cli.js new",
+    "serve": "node ./bin/cli.js serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "chokidar": "^3.5.3",
+    "commander": "^9.4.1",
+    "express": "^4.18.2",
+    "front-matter": "^4.0.2",
+    "fs-extra": "^11.1.0",
+    "glob": "^8.1.0",
+    "handlebars": "^4.7.7",
+    "livereload": "^0.9.3",
+    "lodash": "^4.17.21",
+    "marked": "^4.2.5",
+    "ws": "^8.11.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "license": "MIT"
+}
+

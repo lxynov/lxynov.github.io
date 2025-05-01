@@ -1,0 +1,392 @@
+/* 
+   Minimalist Tech Blog CSS
+   A clean, simple design for your personal tech blog
+*/
+
+/* Base styles and CSS variables */
+:root {
+  --text-color: #333;
+  --light-text: #767676;
+  --background: #fff;
+  --link: #0066cc;
+  --link-hover: #004080;
+  --border: #eaeaea;
+  --code-bg: #f5f5f5;
+  --max-width: 1000px;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "SF Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+/* Dark Mode */
+.dark-mode {
+  --text-color: #e0e0e0;
+  --light-text: #a0a0a0;
+  --background: #121212;
+  --link: #4d9cff;
+  --link-hover: #77b5ff;
+  --border: #333;
+  --code-bg: #1e1e1e;
+}
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text-color);
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  margin: 2rem 0 1rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+p, ul, ol {
+  margin-bottom: 1.5rem;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+  border-bottom-color: var(--link-hover);
+}
+
+/* Site Header */
+.site-header {
+  margin: 3rem 0 2rem;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.site-title a {
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.site-description {
+  color: var(--light-text);
+  margin-bottom: 2rem;
+}
+
+/* Site Content */
+.site-content {
+  padding: 2rem 0;
+}
+
+/* Home Page Post List */
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-list-item {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 2rem;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.post-list-date {
+  flex: 0 0 160px;
+  color: #888;
+  font-family: monospace;
+  font-size: 1.1rem;
+}
+
+.post-list-title {
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.post-list-title a {
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.post-list-title a:hover {
+  color: var(--link);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .post-list-item {
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  
+  .post-list-date {
+    margin-bottom: 0.3rem;
+  }
+}
+
+/* Single Post */
+.post {
+  margin-bottom: 3rem;
+}
+
+.post-header {
+  margin-bottom: 2rem;
+}
+
+.post-title {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-meta {
+  color: var(--light-text);
+  font-size: 0.9rem;
+}
+
+.post-content h2 {
+  margin-top: 2.5rem;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 0;
+  border: 1px solid var(--border);
+}
+
+/* Code blocks and syntax highlighting */
+:not(pre) > code {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  background-color: var(--code-bg);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: var(--code-bg);
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 3px solid var(--border);
+  padding-left: 1rem;
+  color: var(--light-text);
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+
+/* Site Footer */
+.site-footer {
+  padding: 1rem 0;
+  border-top: 1px solid var(--border);
+  color: var(--light-text);
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width);
+}
+
+/* Dark Mode Toggle Button */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 1rem 0;
+}
+
+.theme-toggle:hover {
+  background-color: var(--border);
+}
+
+/* System preference dark mode fallback */
+@media (prefers-color-scheme: dark) {
+  :root:not(.light-mode) {
+    --text-color: #e0e0e0;
+    --light-text: #a0a0a0;
+    --background: #121212;
+    --link: #4d9cff;
+    --link-hover: #77b5ff;
+    --border: #333;
+    --code-bg: #1e1e1e;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  html {
+    font-size: 15px;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  h1, .post-title {
+    font-size: 1.8rem;
+  }
+  
+  .post-list-title {
+    font-size: 1.3rem;
+  }
+  
+  .site-header {
+    margin: 2rem 0 1.5rem;
+  }
+}
+
+/* Header layout with horizontally aligned title and toggle */
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Left side with title */
+.header-left {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Right side with toggle button */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Make sure the site title stays on the same line */
+.site-title {
+  margin-bottom: 0.5rem;
+}
+
+/* Site description appears below the title */
+.site-description {
+  margin-bottom: 0;
+}
+
+/* Theme toggle wrapper positioning */
+.theme-toggle-wrapper {
+  margin-left: auto; /* Pushes the toggle to the right */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .site-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .header-right {
+    margin-top: 1rem;
+    align-self: flex-end;
+  }
+}
+
+/* Dark Mode Toggle Switch */
+.theme-toggle {
+  position: relative;
+  width: 46px;
+  height: 24px;
+  appearance: none;
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  margin: 1rem 0;
+}
+
+/* The toggle circle/knob */
+.theme-toggle::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #333;
+  top: 1px;
+  left: 2px;
+  transition: all 0.3s ease;
+}
+
+/* When toggled to dark mode */
+.theme-toggle.active {
+  background-color: #333;
+  border-color: #333;
+}
+
+/* Move the circle to the right when active */
+.theme-toggle.active::before {
+  left: 24px;
+  background-color: #fff;
+}
+
+/* Hide the default button styles */
+.theme-toggle::-moz-focus-inner {
+  border: 0;
+}
+
+/* For focus states - accessibility */
+.theme-toggle:focus {
+  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.3);
+}
