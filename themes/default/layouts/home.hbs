@@ -6,6 +6,17 @@
   <title>{{site.title}}</title>
   <meta name="description" content="{{site.description}}">
   <link rel="stylesheet" href="/css/main.css">
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark' || 
+          (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark-mode');
+      } else {
+        document.documentElement.classList.add('light-mode');
+      }
+    })();
+  </script>
 </head>
 <body>
   <header class="site-header">
