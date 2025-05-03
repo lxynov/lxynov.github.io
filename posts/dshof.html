@@ -7,6 +7,17 @@
   <meta name="description" content="Brief intros to popular data systems">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark' || 
+          (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark-mode');
+      } else {
+        document.documentElement.classList.add('light-mode');
+      }
+    })();
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -29,7 +40,7 @@
         <header class="post-header">
           <h1 class="post-title">Data Systems Hall of Fame</h1>
           <div class="post-meta">
-            <time datetime="2025-05-03T21:28:39.335Z">May 3, 2025</time>
+            <time datetime="2025-05-03T22:14:28.439Z">May 3, 2025</time>
           </div>
         </header>
         
