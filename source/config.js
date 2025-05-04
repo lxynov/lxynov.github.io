@@ -6,7 +6,7 @@ module.exports = {
     // Site information
     siteData: {
       title: 'Xingyuan Lin',
-      description: 'Interest-driven thinking, learning and research.',
+      description: 'Interest-driven learning, research, and thinking.',
       // description: ' Interest-driven learning. \n dddrying to comprehend the essence of things.',
       baseUrl: '/',
       author: 'Xingyuan',
