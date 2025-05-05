@@ -62,35 +62,13 @@ some free time to learn about it.
 This is a running post which may be updated irregularly. 
 
 # To Be Introduced
-- Analytical Engines/Databases
-  - Trino
-  - StarRocks
-  - DuckDB
-  - ClickHouse
-  - Apache Druid
-  - Apache Pinot
-- Data Processing Frameworks
-  - Apache Spark
-  - Apache Flink
-  - Apache Kafka
-- Table/File Formats
-  - Apache Iceberg
-  - Apache Parquet
-  - Lance
-- Composable Libraries/Frameworks
-  - Apache Arrow
-  - Velox
-  - Apache Calcite
-- "NoSQL" Databases
-  - Redis
-  - MongoDB
-  - Apache Cassandra
-  - RocksDB
-  - LevelDB
-- Graph Databases
-  - Neo4j
-- Timeseries Databases
-  - InfluxDB
+- **Analytical Engines/Databases**: Trino, StarRocks, DuckDB, ClickHouse, Apache Druid, Apache Pinot
+- **Data Processing Frameworks**: Apache Spark, Apache Flink, Apache Kafka
+- **Table/File Formats**: Apache Iceberg, Apache Parquet, Lance
+- **Composable Libraries/Frameworks**: Apache Arrow, Velox, Apache Calcite
+- **"NoSQL" Databases**: Redis, MongoDB, Apache Cassandra, RocksDB, LevelDB
+- **Graph Databases**: Neo4j
+- **Timeseries Databases**: InfluxDB
 
 # References
 - https://prioridata.com/data/smartphone-stats
