@@ -47,6 +47,8 @@ body {
   margin: 0;
   padding: 0;
   transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-y: scroll; /* Always show scrollbar */
+  scrollbar-gutter: stable; /* Reserve space for scrollbar */
 }
 
 .container {
