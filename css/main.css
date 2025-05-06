@@ -163,11 +163,12 @@ a:hover {
 /* Responsive adjustments */
 @media (max-width: 600px) {
   .post-list-item {
-    flex-direction: column;
+    /* flex-direction: column; */
     margin-bottom: 1.5rem;
   }
   
   .post-list-date {
+    flex: 0 0 120px;
     margin-bottom: 0.3rem;
   }
 }
