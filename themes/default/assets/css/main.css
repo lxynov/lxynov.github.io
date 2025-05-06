@@ -299,7 +299,7 @@ blockquote {
 .site-header .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -312,7 +312,7 @@ blockquote {
 /* Right side with toggle button */
 .header-right {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 /* Make sure the site title stays on the same line */
