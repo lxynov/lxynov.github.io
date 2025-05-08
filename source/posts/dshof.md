@@ -61,6 +61,12 @@ some free time to learn about it.
 
 This is a running post which may be updated irregularly. 
 
+# Composable Libraries/Frameworks
+## Apache Calcite
+### What is Apache Calcite
+### Use Cases
+### Get Started
+
 # To Be Introduced
 - **Analytical Engines/Databases**: Trino, StarRocks, DuckDB, ClickHouse, Apache Druid, Apache Pinot
 - **Data Processing Frameworks**: Apache Spark, Apache Flink, Apache Kafka
