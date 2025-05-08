@@ -61,6 +61,19 @@ some free time to learn about it.
 
 This is a running post which may be updated irregularly. 
 
+# Analytical Engines/Databases
+## StarRocks
+### What is StarRocks?
+StarRocks is a distributed analytical SQL database/query engine. It originated as an MPP OLAP
+database which has a storage component, and later added 
+### Life of a Query
+### Data Shuffling
+### Vectorized Query Execution
+### Materialized View
+### Multitenancy
+### Administration
+### Community and Trivia
+
 # To Be Introduced
 - **Analytical Engines/Databases**: Trino, StarRocks, DuckDB, ClickHouse, Apache Druid, Apache Pinot
 - **Data Processing Frameworks**: Apache Spark, Apache Flink, Apache Kafka
