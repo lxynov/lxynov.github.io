@@ -46,7 +46,7 @@ program
       let filePath;
       
       if (type === 'post') {
-        filePath = path.join(process.cwd(), config.sourceDir || 'content', 'posts', `${date}-${slug}.md`);
+        filePath = path.join(process.cwd(), config.sourceDir || 'content', 'posts', `${slug}.md`);
       } else if (type === 'page') {
         filePath = path.join(process.cwd(), config.sourceDir || 'content', 'pages', `${slug}.md`);
       } else {
