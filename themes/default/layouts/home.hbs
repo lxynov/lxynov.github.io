@@ -39,8 +39,14 @@
       <ul class="post-list">
         {{#each posts}}
         <li class="post-list-item">
-          <time class="post-list-date" datetime="{{this.data.date}}">{{formatDate this.data.date 'MMMM DD, YYYY'}}</time>
           <h2 class="post-list-title"><a href="{{this.data.url}}">{{this.data.title}}</a></h2>
+          <p class="post-list-time">Created: 
+            <time datetime="{{this.data.createdDate}}">{{formatDate this.data.createdDate 'MMMM DD, YYYY'}}</time>
+             | 
+            Last updated: 
+            <time datetime="{{this.data.updatedDate}}">{{formatDate this.data.updatedDate 'MMMM DD, YYYY'}}</time>
+             | By Xingyuan Lin
+          </p>
         </li>
         {{/each}}
       </ul>

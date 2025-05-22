@@ -1,6 +1,7 @@
 ---
 title: Data Systems Hall of Fame
-# date: 2025-05-03T21:20:16.681Z
+createdDate: 2025-05-03T12:00:00-04:00
+updatedDate: 2025-05-09T12:00:00-04:00
 description: Brief intros to popular data systems
 draft: false
 ---
